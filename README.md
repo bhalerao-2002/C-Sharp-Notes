@@ -85,18 +85,29 @@ for (int i = 0; i < numbers.GetLength(0); i++)
 
 ## Methods
 - Methods/Functions only execute if they got called and are always inside the class.
-- we can give Named Arguments
-```
-static void MyMethod(string child1, string child2, string child3) 
-{
-  Console.WriteLine("The youngest child is: " + child3);
-}
-
-static void Main(string[] args)
-{
-  MyMethod(child3: "John", child1: "Liam", child2: "Liam");
-}
-
-// The youngest child is: John
-```
+- Parameters and Arguments:
+  - Default Parameters
+    ```
+    static void Main(string country = "hue"){
+      Console.WriteLine(country);
+    }
+    ```
+  - Return Parameters
+    - If we want to return the values from the function/Method then we have to use the required datatype instead of void in declaration and must include return type inside the function.
+  - Named Arguments
+      ```
+      static void MyMethod(string child1, string child2, string child3) 
+      {
+        Console.WriteLine("The youngest child is: " + child3);
+      }
+      
+      static void Main(string[] args)
+      {
+        MyMethod(child3: "John", child1: "Liam", child2: "Liam");
+      }
+      
+      // The youngest child is: John
+      ```
 - We can do Method Overloading :- Multiple methods can have the smae name with different parameters.
+
+
