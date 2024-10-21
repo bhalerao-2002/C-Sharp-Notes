@@ -110,4 +110,8 @@ for (int i = 0; i < numbers.GetLength(0); i++)
       ```
 - We can do Method Overloading :- Multiple methods can have the smae name with different parameters.
 
+# OOPS in C#
 
+## Basics:
+- A class is a template for objects, and an object is an instance of a class.
+- 
