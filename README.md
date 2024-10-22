@@ -114,4 +114,127 @@ for (int i = 0; i < numbers.GetLength(0); i++)
 
 ## Basics:
 - A class is a template for objects, and an object is an instance of a class.
-- 
+- Class:
+  ```
+  class Car {
+    public string color = "red";
+  }
+
+  class Program{
+    static void Main(string[] args){
+      Car myObj = new Car();
+      Console.WriteLine(myObj.color);
+    }
+  }  
+  ```
+  - Constructors make code simple and fast, Constructor overloading is allowed.
+
+  ## Access Specifiers
+  - ![image](https://github.com/user-attachments/assets/2e228471-12df-4919-9163-0b28bb00ee79)
+ 
+  ## Encapsulation:
+  - make class member private and give public get set methods to work with.
+    ```
+    class Person
+    {
+      private string name;
+
+      public string Name
+      {
+        get { return name; }
+        set { name = value; }
+      }
+    }
+
+    //so for accessing 
+    Console.WriteLine(obj.Name);
+    obj.Name = "Rushi";
+    ```
+    - Or can make short-hand like
+      ```
+      class Person
+      {
+        public string Name
+        {get; set;}
+      }
+      ```
+## Inheritance
+```
+class Vehicle  // base class (parent) 
+{
+  public string brand = "Ford";  // Vehicle field
+  public void honk()             // Vehicle method 
+  {                    
+    Console.WriteLine("Tuut, tuut!");
+  }
+}
+
+class Car : Vehicle  // derived class (child)
+{
+  public string modelName = "Mustang";  // Car field
+}
+
+class Program
+{
+  static void Main(string[] args)
+  {
+    // Create a myCar object
+    Car myCar = new Car();
+
+    // Call the honk() method (From the Vehicle class) on the myCar object
+    myCar.honk();
+
+    // Display the value of the brand field (from the Vehicle class) and the value of the modelName from the Car class
+    Console.WriteLine(myCar.brand + " " + myCar.modelName);
+  }
+}
+```
+  - Use **sealed** keyword, if we want to never inherit any sub-class from the class
+
+## Polymorphism
+- Polymorphism uses those methods to perform different tasks. This allows us to perform a single action in different ways.
+- If we use same function then the base class function will over-write the other subclass functions.
+- If we want to override the parent function then we have to use **virtual** and **override** keyword as follows.
+  ```
+  class Animal  // Base class (parent) 
+  {
+    public virtual void animalSound() 
+    {
+      Console.WriteLine("The animal makes a sound");
+    }
+  }
+  
+  class Pig : Animal  // Derived class (child) 
+  {
+    public override void animalSound() 
+    {
+      Console.WriteLine("The pig says: wee wee");
+    }
+  }
+  
+  class Dog : Animal  // Derived class (child) 
+  {
+    public override void animalSound() 
+    {
+      Console.WriteLine("The dog says: bow wow");
+    }
+  }
+  
+  class Program 
+  {
+    static void Main(string[] args) 
+    {
+      Animal myAnimal = new Animal();  // Create a Animal object
+      Animal myPig = new Pig();  // Create a Pig object
+      Animal myDog = new Dog();  // Create a Dog object
+  
+      myAnimal.animalSound(); // The animal makes a sound
+      myPig.animalSound(); // The pig says: wee wee
+      myDog.animalSound(); // The dog says: bow wow
+    }
+  } 
+  ```
+## Abstraction
+- **Abstract class:** is a restricted class that cannot be used to create objects (to access it, it must be inherited from another class).
+- **Abstract method:** can only be used in an abstract class, and it does not have a body. The body is provided by the derived class (inherited from).
+
