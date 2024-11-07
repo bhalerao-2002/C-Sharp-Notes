@@ -91,6 +91,88 @@ When a user writes a WebDriver code in Selenium and executes it, the following a
 - The HTTP server then receives the execution status and then sends back the status to an automation script, which then shows the result ( as passed or an exception or error).
 
 
+### Basic Script of Selenium WebDriver in JAVA
+Task we intended to perform in this script is:
+- Firstly, open the browser.
+- Secondly, navigate to the ToolsQA Demo Website.
+- Thirdly, maximize the browser window.
+- After that, retrieve the title of the page.
+- Fifthly, log in to the Website by specifying credentials.
+- Sixthly, validate the LogOut button is visible.
+- Lastly, we logout from the Website.
+
+Code:
+```
+package WebDriversBasics;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class launch {
+    public static void main(String[] args) {
+//        1. open the browser.
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\ramerus\\Downloads\\chromedriver-win64\\chromedriver.exe");
+        WebDriver RushiDriver = new ChromeDriver();
+
+//        2. navigate to the ToolsQA Demo Website.
+        RushiDriver.get("https://demoqa.com/login");
+
+//        3. maximize the browser window.
+        RushiDriver.manage().window().maximize();
+
+//        4. retrieve the title of the page.
+        String title = RushiDriver.getTitle();
+        System.out.println("The page title is: " + title);
+
+//        5. log in to the Website by specifying credentials.
+        WebElement uName = RushiDriver.findElement(By.xpath("//*[@id='userName']"));
+        WebElement pswd = RushiDriver.findElement(By.xpath("//*[@id='password']"));
+        WebElement loginBtn = RushiDriver.findElement(By.xpath("//*[@id='login']"));
+
+        uName.sendKeys("testuser");
+        pswd.sendKeys("Password@123");
+        loginBtn.click();
+
+//        6. validate the LogOut button is visible.
+//        7. we logout from the Website.
+        try{
+            WebElement logoutBtn = RushiDriver.findElement(By.xpath("//div[@class='text-right col-md-5 col-sm-12']//button[@id='submit']"));
+
+            if(logoutBtn.isDisplayed()){
+                logoutBtn.click();
+                System.out.println("LogOut Success 😊");
+            }
+        }
+        catch (Exception e){
+            System.out.println("Ahhh...😒");
+        }
+//        8. Close the Browser
+        RushiDriver.quit();
+    }
+}
+```
+
+## Browser Commands in Selenium WebDriver:
+
+### A. Basic
+1. get(String arg0): void
+  1. It opens the URL provided as String.
+2. getTitle(): String
+  1. Returns title of the Webpage.
+3. getCurrentUrl(): String
+  1. Returns the current URL which is opened in the browser.
+4. getPageSource(): String
+   1. Returns the source code of the page.
+5. close(): void
+  1. Close only the current Window the WebDriver is currently controlling. 
+6. quit(): void
+   1. Closes all windows opend by the WebDriver.
+
+### B. Intermediate
+
+### C. Advanced
 
 
 
