@@ -92,6 +92,8 @@ When a user writes a WebDriver code in Selenium and executes it, the following a
 
 
 ### Basic Script of Selenium WebDriver in JAVA
+
+
 Task we intended to perform in this script is:
 - Firstly, open the browser.
 - Secondly, navigate to the ToolsQA Demo Website.
@@ -155,8 +157,8 @@ public class launch {
 ```
 
 ## Browser Commands in Selenium WebDriver:
-
-### A. Basic
+driver._______
+#### A. Basic
 1. get(String arg0): void
   1. It opens the URL provided as String.
 2. getTitle(): String
@@ -170,10 +172,52 @@ public class launch {
 6. quit(): void
    1. Closes all windows opend by the WebDriver.
 
-### B. Intermediate
+#### B. Intermediate
 
-### C. Advanced
+#### C. Advanced
 
+## Browser Navigation Command
+driver.navigate().________
+1. to(String arg0) : void
+   1. Loads new web page(provided url) in current browser window
+2. forward() : void
+   1. This method does the same operation as clicking on the Forward(Next) Button of any browser
+3. back() : void
+   1. This method does the same operation as clicking on the Back Button of any browser.
+4. refresh() : void
+   1. This method Refresh the current page.
+  
+
+## WebElement Commands
+WebElements are HTML elements.
+So, to get the WebElement object write the below statement:
+```WebElement Rushielement = driver.findElement(By.id("UserName"));```
+Rushielement.___________
+1. clear( ) : void
+   1. If the element is text(input/textarea) entry element, it will clear the value, else it will do nothing.
+2. sendKeys(String ) : void
+   1. It simulates typing into a element.
+3. click( ) : void
+   1. Simulates the clicking of any element.
+4. isDisplayed( ) : boolean
+   1. determines is the element is curretly displayed
+5. isEnabled( ) : boolean
+6. isSelected( ) : boolean
+7. submit( ) : void
+   1. It works better than click() on form like elements
+8. getText( ) : String
+   1. Fetch the visible (i.e. not hidden by CSS) innerText of the element.
+9. getTagName( ) : String
+   1. gets tag name of elements.
+10. getCssvalue( ) : String
+11. getAttribute(String Name) : String
+12. getSize( ) : Dimension
+   1. fetch the width and height of the rendered element
+13. getLocation( ) : Point
+    1. locate the location of the element on the page.
+
+## Find elements using Selenium WebDriver?
+![image](https://github.com/user-attachments/assets/540dcecf-8bb9-4db0-b445-fbac9283bbb2)
 
 
 
