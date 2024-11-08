@@ -156,6 +156,8 @@ public class launch {
 }
 ```
 
+# WebDriver Commands
+
 ## Browser Commands in Selenium WebDriver:
 driver._______
 #### A. Basic
@@ -217,9 +219,55 @@ Rushielement.___________
     1. locate the location of the element on the page.
 
 ## Find elements using Selenium WebDriver?
+-  to locate or find the elements each method uses a locator strategy which is provided via an argument to the "By" object. These strategies are by Id, by Name, by Class Name, by XPath, by link, etc
+  
 ![image](https://github.com/user-attachments/assets/540dcecf-8bb9-4db0-b445-fbac9283bbb2)
 
+## How to find elements in Selenium?
+1. findElement() ->  finds the first most element within the web page, if not found throws the "NoSuchElementException".
+2. findElements() -> finds a list of web elements on the web page, if not found doesn't throws the error, simply gives empty list.
 
+
+## How to handle a CheckBox/radio in Selenium WebDriver?
+Locate and select a CheckBox/radio in Selenium using:-
+1. ID Locator - driver.findElement(By.id("hobbies-checkbox-1")).click();
+2. XPath locator - driver.findElement(By.xpath("//label[text()='Sports']")).click();
+3. CSS Selector locator - driver.findElement(By.cssSelector("label[for='hobbies-checkbox-1']")).click();
+   
+### Validations on a CheckBox/radio: 
+isSelected(): Checks whether a CheckBox/radio is selected or not.
+isDisplayed(): Checks whether a CheckBox/radio displays on the web page or not.
+isEnabled(): Checks whether a CheckBox/radio is enabled or not
+
+## How to handle a DropDown in Selenium WebDriver?
+In HTML dropdown is generally implemented using <select> or <input> tag. For hadling DropDown Selenium WebDrivers provides a class called "Select" class.
+```Select select = new Select(WebElement webelement);```
+
+### How to select a value from a dropdown in Selenium?
+1. selectByIndex(int arg0) : void
+   1. It accepts the index of the dropdown value, which needs to be selected. The index starts at 0.
+2. selectByValue(String arg0) : void
+3. selectByVisibleText(String arg0): void
+
+### How to check whether dropdown is Multi-Select?
+isMultiple(): boolean
+
+### How to get options from a dropdown in Selenium?
+1. getOptions(): List<WebElement>
+2. getFirstSelectedOption(): WebElement
+3. getAllSelectedOptions():List<WebElement>
+
+### getAllSelectedOptions():List<WebElement>
+1. deselectAll(): void
+2. deselectByIndex(int arg0): void
+3. deselectByValue(String arg0): void
+4. deselectByVisibleText(String arg0): void
+
+## Handle Dynamic WebTables in Selenium Webdriver :
+```/html/body/div[1]/div[2]/div/div[2]/article/div/table/tbody/tr[2]/td[1]```
+- Part 1 - Location of the table in the webpage </html/body/div[1]/div[2]/div/div[2]/article/div/>
+- Part 2 - Table body (data) starts from here <table/tbody/>
+- Part 3 - It says table row 2 and table column 1 <tr[2]/td[1]>
 
 
 
