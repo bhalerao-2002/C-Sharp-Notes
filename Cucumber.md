@@ -30,3 +30,12 @@ Cucumber is a testing framework which supports Behavior Driven Development (BDD)
 
 ### What is SpecFlow?
 SpecFlow is inspired by Cucumber framework in the Ruby on Rails world. Cucumber uses plain English in the Gherkin format to express user stories. Once the user stories and their expectations are written, the Cucumber gem is used to execute those stores. SpecFlow brings the same concept to the .NET world and allows the developer to express the feature in plain English language. It also allows to write specification in human-readable Gherkin format.
+
+
+# Cucumber:
+
+1. Cucumber helps improve communication
+2. Cucumber is an Automated Acceptance Testing Tool
+3. All testers can take part in automation test with Cucumber BDD
+4. 
+
