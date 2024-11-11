@@ -1,6 +1,10 @@
 # Selenium: 
 - Selenium is a set of open-source web automation tools that leverages the power of web browsers and helps automate workflows of how users interact with the web application within the browser
 
+## Configure selenium jar in Intellij IDEA:
+- Project structure -> modules -> Dependencies -> + icon -> Jars -> select all selenium jar files -> Apply -> Ok
+
+  
 ### Selenium Advantages:
 - Open-source tool
 - Extended for various technologies.
