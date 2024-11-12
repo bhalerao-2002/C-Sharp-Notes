@@ -1,4 +1,55 @@
+# Defect Life Cycle: 
+- Defect life cycle, also know as Bug Life Cycle is the journey of a defect cycle, which a defect goes through during its lifetime.
+- ![image](https://github.com/user-attachments/assets/a9418dd6-65c2-4186-a306-354ac2eb3eed)
+- New : New defect that is raised and yet to be validated.
+- Assigned : The defect is then assigned against a development team to address it but not yet resolved.
+- Active : The defect is begin addressed by the developer and investigation is under progress. At this stage there are two possible outcomes;
+  1. Deferred:- When a defect cannot be addressed in that particular cycle it is deferred to future release.
+  2. Rejected:- A defect can be rejected for any of the 3 reasons
+     a. Duplicate defect, 
+     b. Not a defect, 
+     c. Non Reproducible.
+  3. Test:- The Defect is fixed and ready for testing.
+  4. Reopened:- When he defec is NOT fixed, QA reopens/reactivates the defect.
+  5. Verified:- The Defect that is retested and the test has been verified by QA.
+  6. Closed :- The final state of the defect that can be closed after the QA retesting or can closed if the defect is duplicate or considered as Not defect.
+ 
+###  Defect triage:
+Defect triage is a process of evaluating and prioritizing defects or bugs based on their severity, impact, and likelihood of occurrence. It involves a team of stakeholders, including developers, testers, project managers, and other relevant personnel, who come together to review, analyse and prioritize defects.
 
+The goal of deefect triage is to ensure that critical defects are addressed promptly, while less severe defects are resolved in a timely manner, and resoursces are allocated effectively.
+
+### Defect Prioritization: 
+
+Defect prioritization is the process of ranking or categorizing sofware defects or bugs based on their impact and severity. 
+It is an essential step in defect mangement, as it helps the development team to identify the most critical issues that need to be resolved first.
+
+### Defect Tracking:
+
+Defect tracking is the process of identifying, documenting, and managing software defects or bugs throughout the software development lifecycle. It involves tracking the defect from the time they are reported until they are resolved and verified.
+
+In defect tracking, each defect is assigned a unique identifier and is entered into a tracking system, such as a defect tracking tool. The system is used to capture and manage information related to the defect, including its severity, priority, steps to reproduce, and the status of its resolution
+
+### Defect report?
+A defect report is a document that describes a software defect or bug that has been identified during the testing or development phase of a software project. It is typically created by a tester or QA engineer and is used to report the details of the defect to the development team for further investigation and resolution.
+
+### Defect leakage?
+Defect leakage, also known as "escape defects," refers to the situation where a software defect that was previously identified and reported is not completely fixed and is released into the production environment. It means that a defect has escaped from the testing process and has been released into the live environment where end-users can encounter it.
+
+### Defect report template and the purpose of a defect report template?
+- A defect report template is a pre-designed format used to document and report  software defects.
+- It includes details such as **defect ID, summary, description, severity, priority, status, assignee, reporter, and dates reported and fixed**.
+- The purpose is to provide a standardized format for tracking defects, ensuring all necessary information is captured, and facilitating effective communication among different teams.
+
+### Ddefect trend analysis and the purpose of defect trend analysis?
+- Defect trend analysis is the process of analyzing data on defects over time to identify patterns or trends and make data-driven decisions to improve the software development process.
+- The purpose of defect trend analysis is to identify the frequency, severity, and types of defects that are occurring, as well as their root causes, so that corrective actions can be taken to prevent similar issues from occurring in the future. By analyzing data on defects over time, teams can identify areas where improvements are needed and take proactive steps to address issues before they become larger problems.
+
+### 
+
+
+
+  
 1. Selenium
 - Think of Selenium as your "robot tester"
 - It automates web browser actions (clicking buttons, filling forms, etc.)
