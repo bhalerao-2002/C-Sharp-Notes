@@ -1,6 +1,7 @@
 # Defect Life Cycle: 
 - Defect life cycle, also know as Bug Life Cycle is the journey of a defect cycle, which a defect goes through during its lifetime.
-- ![image](https://github.com/user-attachments/assets/a9418dd6-65c2-4186-a306-354ac2eb3eed)
+ ![image](https://github.com/user-attachments/assets/a9418dd6-65c2-4186-a306-354ac2eb3eed)
+
 - New : New defect that is raised and yet to be validated.
 - Assigned : The defect is then assigned against a development team to address it but not yet resolved.
 - Active : The defect is begin addressed by the developer and investigation is under progress. At this stage there are two possible outcomes;
@@ -9,10 +10,10 @@
      a. Duplicate defect, 
      b. Not a defect, 
      c. Non Reproducible.
-  3. Test:- The Defect is fixed and ready for testing.
-  4. Reopened:- When he defec is NOT fixed, QA reopens/reactivates the defect.
-  5. Verified:- The Defect that is retested and the test has been verified by QA.
-  6. Closed :- The final state of the defect that can be closed after the QA retesting or can closed if the defect is duplicate or considered as Not defect.
+- Test:- The Defect is fixed and ready for testing.
+- Reopened:- When he defec is NOT fixed, QA reopens/reactivates the defect.
+- Verified:- The Defect that is retested and the test has been verified by QA.
+- Closed :- The final state of the defect that can be closed after the QA retesting or can closed if the defect is duplicate or considered as Not defect.
  
 ###  Defect triage:
 Defect triage is a process of evaluating and prioritizing defects or bugs based on their severity, impact, and likelihood of occurrence. It involves a team of stakeholders, including developers, testers, project managers, and other relevant personnel, who come together to review, analyse and prioritize defects.
@@ -45,9 +46,28 @@ Defect leakage, also known as "escape defects," refers to the situation where a 
 - Defect trend analysis is the process of analyzing data on defects over time to identify patterns or trends and make data-driven decisions to improve the software development process.
 - The purpose of defect trend analysis is to identify the frequency, severity, and types of defects that are occurring, as well as their root causes, so that corrective actions can be taken to prevent similar issues from occurring in the future. By analyzing data on defects over time, teams can identify areas where improvements are needed and take proactive steps to address issues before they become larger problems.
 
-### 
+### Defect removal efficiency?
+Defect Removal Efficiency (DRE) is a metric used to measure the effectiveness of the  testing process in detecting and removing defects or bugs from software. DRE is calculated as the percentage of defects that were found and fixed during the testing process, compared to the total number of defects in the software.
 
+The formula for calculating DRE is:
 
+**DRE = (Total defects - Defects found and fixed during testing) / Total defects x 100%**
+
+For example, if there were a total of 100 defects in the software, and 80 were found and fixed during testing, the DRE would be:
+
+DRE = (100 - 80) / 100 x 100% = 20%
+
+This means that the _**testing process was able to find and fix 80% of the defects**_ in the software, resulting in a DRE of 20%.
+
+### Defect acceptance rate?
+Defect acceptance rate is the percentage of defects found during testing that are accepted by the development team as valid issues. It measures the effectiveness of the testing process in identifying and reporting real issues, and is calculated by 
+
+**DAR = (no. of accepted defects) / (total no. of defects found during testing)**
+
+A higher defect acceptance rate indicates better communication and collaboration between the testing and development teams.
+
+### Defect triage board and the purpose of a defect triage board?
+A defect triage board is a visual tool used by **testing and development teams** to prioritize and manage defects throughout the life cycle. Its purpose is to provide a central location where all defects are tracked and visible to the team, allowing for collaboration and communication. It helps prioritize defects based on their impact on the system and allocate resources efficiently to address critical defects promptly.
 
   
 1. Selenium
